@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct Tab2View: View {
-    @EnvironmentObject var itemViewModel: ViewModel
+    @StateObject var itemViewModel = ViewModel()
+//    @EnvironmentObject var itemViewModel: ViewModel
     var body: some View {
         NavigationStack {
             List {
